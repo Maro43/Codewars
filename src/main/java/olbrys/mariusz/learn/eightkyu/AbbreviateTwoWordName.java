@@ -12,6 +12,9 @@ patrick feeney => P.F
 public class AbbreviateTwoWordName {
 
     public static String abbrevName(String name) {
+        if (name == null || name.split(" ").length != 2) {
+            return "exepction";
+        }
         return name.split(" ")[0].toUpperCase().charAt(0) + "." + name.split(" ")[1].toUpperCase().charAt(0);
     }
 
