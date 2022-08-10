@@ -3,11 +3,12 @@ package olbrys.mariusz.learn.eightkyu;
 public class ConvertNumbertoString {
 
     public static String numberToString(int num) {
-               return String.valueOf(num);
+        return String.valueOf(num);
     }
 
     public static void main(String[] args) {
 
-        System.out.println("123");
+        System.out.println(ReturningStrings.greet("Jon"));
+        System.out.println(numberToString(123));
     }
 }
