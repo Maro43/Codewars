@@ -6,9 +6,9 @@ import static org.junit.Assert.assertEquals;
 public class RemoveFirstandLastCharacterTest {
     @Test
     public void testRemoval() {
-        assertEquals("loquen", RemoveFirstandLastCharacter.removeChars("eloquent"));
-        assertEquals("ountr", RemoveFirstandLastCharacter.removeChars("country"));
-        assertEquals("erso", RemoveFirstandLastCharacter.removeChars("person"));
-        assertEquals("lac", RemoveFirstandLastCharacter.removeChars("place"));
+        assertEquals("loquen", RemoveFirstAndLastCharacter.removeChars("eloquent"));
+        assertEquals("ountr", RemoveFirstAndLastCharacter.removeChars("country"));
+        assertEquals("erso", RemoveFirstAndLastCharacter.removeChars("person"));
+        assertEquals("lac", RemoveFirstAndLastCharacter.removeChars("place"));
     }
 }

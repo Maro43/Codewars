@@ -1,25 +1,37 @@
 package olbrys.mariusz.learn.eightkyu;
 
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class ReversedStrings {
 
     public static String solution(String str) {
-        String[] Letters = str.split("");
-        String Result = "";
-        for (int i = 0; i < Letters.length; i++) {
-            if (i == Letters.length - 1)
-                Result = Letters[i] + Result;
-            else Result = Letters[i] + Result;
+        String[] letters = str.split("");
+        String result = "";
+        for (int i = 0; i < letters.length; i++) {
+            if (i == letters.length - 1) {
+                result = letters[i] + result;
+            } else {
+                result = letters[i] + result;
+            }
         }
-        return Result;
+        return result;
     }
 
+    public static String solution2(String str) {
+        List<String> letters = Arrays.asList(str.split(""));
+        Collections.reverse(letters);
+        return String.join("", letters);
+    }
 
     public static void main(String[] args) {
-        String Tets = solution("IkarVR To Jet Test");
-        System.out.println(Tets);
+        String test = solution("IkarVR To Jet Test");
+        String test2 = solution2("IkarVR To Jet Test");
+        System.out.println(test);
+        System.out.println(test2.equals(test));
     }
-//    List Letters = Arrays.asList(str.split(""));
-//     Collections.reverse(Letters);
-//     return String.join(Letters);
+
+
 }
